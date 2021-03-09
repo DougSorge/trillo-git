@@ -1,0 +1,26 @@
+
+
+// box sizing and global font size
+html{
+  font-size: 62.5%; //  10px / 16px = 62.5%
+  box-sizing: border-box;
+}
+
+//resetting ALL elements, incouding before and after elements to have zero margin and padding
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  
+  
+
+  background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark));
+  background-repeat: no-repeat;
+
+}
+

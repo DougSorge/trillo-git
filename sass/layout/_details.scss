@@ -1,0 +1,17 @@
+.details{
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-gray-light-3);
+  border-bottom: var(--border-1);
+
+  .description{
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+  }
+
+  .user-reviews{
+    
+    flex: 1;
+  }
+}
+

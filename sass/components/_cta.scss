@@ -1,0 +1,64 @@
+.cta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__book-now{
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+    color: transparent;
+    background: linear-gradient(var(--color-primary-light), var(--color-primary-dark));
+    -webkit-background-clip: text;
+     background-clip: text;
+     margin: 2rem 2rem;
+     text-transform: uppercase;
+  }
+}
+
+.btn{
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: none;
+  border-radius: 75px;
+  color: white;
+  margin-bottom: 2rem;
+  background: linear-gradient(var(--color-primary-dark), var(--color-primary-light));
+  position: relative;
+  transition: all .2s;
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
+
+  &__text-1{
+    display: inline-block;
+    transition: .2s;
+  }
+
+  &__text-2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: .2s;
+    visibility: hidden;
+  }
+
+  &:hover{
+    animation: .5s pulsate infinite;
+  }
+
+  &:hover &__text-1{
+    transform: translateY(-4rem);
+    text-shadow: 0 5px 1rem rgba(var(--color-primary), .5);
+  }
+
+  &:hover &__text-2{
+    top: 30%;
+    visibility: visible;
+  }
+}

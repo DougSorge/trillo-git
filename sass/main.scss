@@ -1,0 +1,19 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+  
+@import "components/gallery";
+@import "components/overview";
+@import "components/description";
+@import "components/reviews";
+@import "components/cta";
+
+@import "pages/home.scss";
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/details";
+
+@import "base/base";
+@import "base/typography";
+@import "base/animations";

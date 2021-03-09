@@ -1,0 +1,32 @@
+.container{
+  max-width: 120rem; //1200px
+  margin: 8rem auto;
+  background-color: var(--color-gray-light-2);
+  box-shadow: var(--shadow-dark);
+}
+
+.header{
+  min-height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--color-gray-light-2);
+}
+
+.content{
+ display: flex;
+}
+
+.sidebar{
+  background-color: var(--color-gray-dark-1);
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: space-between;
+  // flex: grow | flex: shrink | flex: basis
+  // 18% means that this will occupy 18% of the flex containers width.
+  flex: 0 0 18%;
+}
+
+.hotel-view{
+  background-color: var(--color-white);
+  flex: 1;
+}
